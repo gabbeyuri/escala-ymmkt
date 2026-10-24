@@ -43,7 +43,7 @@ LOW_TICKET_SIGNALS = [
 EDGE_PATH = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 EDGE_PORT = 9333
 EDGE_DATA = os.path.join(os.environ.get("TEMP", "/tmp"), "edge-scraper")
-DEVBROWSER_CMD = r"C:\Users\Pichau\AppData\Roaming\npm\dev-browser.cmd"
+DEVBROWSER_CMD = os.path.join(os.environ.get("APPDATA", ""), "npm", "dev-browser.cmd")
 TEMP_SCRIPT = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".tmp-devbrowser.js")
 
 
